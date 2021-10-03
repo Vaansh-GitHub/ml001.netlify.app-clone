@@ -1,6 +1,6 @@
 Hello, I am Vaansh and this is my repository.
 You can add some notes here then i will read them and merge them and can know your request.Like this,
-Vaansh:"This is Web Development tutorials and practice."
+Vaansh:"This is Web Development tutorials and for practice."
 Your_name:"message"
 
 I will be obliged to read your comments.
