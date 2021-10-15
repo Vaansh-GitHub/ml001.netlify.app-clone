@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap);
+body{
+    background:rgb(228, 240, 247);
+    font-family:Poppins,sans-serif;
+}
+#navbar{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-between;
+}
+#navbar ul{
+    list-style-type:none;
+}
+#navbar ul li{
+    display:inline;
+    padding:20px;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color:black;
+    font-size:20px;
+    font-family:arial;
+}
+#content
+{
+    display:flex;
+    flex-grow:row wrap;
+    justify-content:space-between;
+}
+#content1
+{
+    width: 70%;
+    max-width:80%;
+    height:auto;
+    padding:30px;
+    box-sizing:border-box;
+}
+#content1 button{
+      border:2px solid blue;
+      width:60%;
+      height:auto;
+      padding:15px;
+      text-align:center;
+      background-color:blue;
+      font-weight:bold;
+      font-size:20px;
+      color:white;
+      transition:background-color 0.5s,color 0.5s,box-shadow 0.5s;
+}
+#content1 button:hover{
+        color:blue;
+        background-color:transparent;
+        box-shadow:3px 3px 8px black;
+}
+#content2
+{
+    width:30%;
+    min-width:20%;
+    height:auto;
+    border:none;
+    border-left:2px solid black;
+    padding-left:20px;
+    box-sizing:border-box;
+    text-align:center;
+
+}
+#icons{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content:center;
+
+}
+#icons a img{
+        width:40px;
+        height:40px;    
+        padding:5px;
+        transition: width 0.2s,height 0.2s;
+}
+#icons a img:hover{
+    width:45px;
+    height:45px;    
+}
+#footer p,h1{
+    font-size:20px;
+    font-family:Poppins,sans-serif;
+    text-align:center;
+}
+#footer>h1 a{
+     text-decoration:none;
+     color:black;
+     transition:border 0.1s;
+}
+#footer>h1 a:hover{
+    border:none;
+    border-bottom:2px solid black;
+}
