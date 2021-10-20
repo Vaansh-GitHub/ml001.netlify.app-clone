@@ -7,35 +7,45 @@ body{
     display:flex;
     flex-flow:row wrap;
     justify-content:space-between;
+    border:none;
+    border-bottom:1px solid black;
+
 }
 #navbar ul{
     list-style-type:none;
 }
 #navbar ul li{
     display:inline;
-    padding:20px;
 }
 #navbar ul li a{
     text-decoration: none;
     color:black;
     font-size:20px;
     font-family:arial;
+    padding:20px 20px 0 20px;
+}
+#navbar #heading img{
+    width:50%;
+    height:auto;
 }
 #content
 {
+    width:100%;
+    height:auto;
     display:flex;
     flex-grow:row wrap;
     justify-content:space-between;
 }
 #content1
 {
-    width: 70%;
-    max-width:80%;
+    width: 90%;
+    max-width:100%;
     height:auto;
     padding:30px;
     box-sizing:border-box;
 }
 #content1 button{
+    margin:auto;
       border:2px solid blue;
       width:60%;
       height:auto;
@@ -54,12 +64,11 @@ body{
 }
 #content2
 {
-    width:30%;
-    min-width:20%;
-    height:auto;
+    width:auto;
+    max-width:auto;
+    height:90%;
     border:none;
-    border-left:2px solid black;
-    padding-left:20px;
+    border-left:1px solid black;
     box-sizing:border-box;
     text-align:center;
 
@@ -93,4 +102,26 @@ body{
 #footer>h1 a:hover{
     border:none;
     border-bottom:2px solid black;
+}
+@media only screen and (max-width:900px)
+{
+    #navbar{
+        display:inline-block;
+        margin:auto;
+
+    }
+    #navbar span:nth-child(2){
+        display:block;
+        tesxt-align:center;
+    }
+    #navbar ul li{
+        padding:30px 10px;
+    }
+    #navbar #heading img{
+        width:auto;
+    }
+    #navbar #heading{
+        display:block;
+        margin:auto;
+    }
 }
