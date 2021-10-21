@@ -1,7 +1,10 @@
-@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap);
-body{
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap);
+*{
     background:rgb(228, 240, 247);
     font-family:Poppins,sans-serif;
+}
+a{
+    text-decoration:none;
 }
 #navbar{
     display:flex;
@@ -15,19 +18,24 @@ body{
     list-style-type:none;
 }
 #navbar ul li{
-    display:inline;
+    display:inline-block;
 }
 #navbar ul li a{
-    text-decoration: none;
     color:black;
-    font-size:20px;
-    font-family:arial;
+    font-size:1.5vw;
+    font-weight:bold;
     padding:20px 20px 0 20px;
 }
 #navbar #heading img{
     width:50%;
     height:auto;
 }
+#navbar #heading{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content:center;
+}
+
 #content
 {
     width:100%;
@@ -42,10 +50,10 @@ body{
     max-width:100%;
     height:auto;
     padding:30px;
-    box-sizing:border-box;
 }
 #content1 button{
-    margin:auto;
+      display:block;
+      margin:auto;
       border:2px solid blue;
       width:60%;
       height:auto;
@@ -95,7 +103,6 @@ body{
     text-align:center;
 }
 #footer>h1 a{
-     text-decoration:none;
      color:black;
      transition:border 0.1s;
 }
@@ -106,13 +113,13 @@ body{
 @media only screen and (max-width:900px)
 {
     #navbar{
-        display:inline-block;
-        margin:auto;
-
+        flex-flow:column wrap;
+        align-items:center;
+        
     }
     #navbar span:nth-child(2){
         display:block;
-        tesxt-align:center;
+        text-align:center;
     }
     #navbar ul li{
         padding:30px 10px;
@@ -124,4 +131,5 @@ body{
         display:block;
         margin:auto;
     }
+    
 }
