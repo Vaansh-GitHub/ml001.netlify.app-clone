@@ -5,6 +5,7 @@
 }
 a{
     text-decoration:none;
+    color:black;
 }
 #navbar{
     display:flex;
@@ -35,7 +36,6 @@ a{
     flex-flow: row nowrap;
     justify-content:center;
 }
-
 #content
 {
     width:100%;
